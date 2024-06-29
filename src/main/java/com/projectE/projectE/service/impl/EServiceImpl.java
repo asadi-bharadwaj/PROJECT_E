@@ -1,5 +1,6 @@
 package com.projectE.projectE.service.impl;
 
+import java.time.Instant;
 import java.util.Locale.Category;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,7 @@ public class EServiceImpl implements EService{
 				.description(eDetails.getDescription())
 				.category(eDetails.getCategory())
 				.modelNumber(eDetails.getModelNumber())
-				.releaseDate(eDetails.getReleaseDate())
+				.releaseDate(Instant.now())
 				.weight(eDetails.getWeight())
 				.color(eDetails.getColor())
 				.warrenty(eDetails.getWarrenty())
