@@ -6,4 +6,8 @@ public interface EService {
 
 	long saveProduct(EDetails eDetails);
 
+	EDetails getDetails(Long productId);
+
+	
+
 }

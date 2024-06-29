@@ -33,4 +33,12 @@ public class EServiceImpl implements EService{
 		return details.getProductId();
 	}
 
+	@Override
+	public EDetails getDetails(Long productId) {
+		EDetails eDetails = store.findById(productId)
+				.orElseThrow(() -> new NullPointerException());
+		return eDetails;
+	}
+
+	
 }
